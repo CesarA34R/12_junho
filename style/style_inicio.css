@@ -93,3 +93,20 @@ section{
     align-items: center;
 }
 
+article{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div.boas_vindas{
+    background-color: #424242;
+    max-width: 500px;
+    max-height: 100px;
+}
+
+
+div.presentes{
+
+}
+
