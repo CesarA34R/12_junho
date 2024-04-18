@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: courgette;
+    src: url(font/Courgette/Courgette-Regular.ttf);
+}
+
+@font-face {
+    font-family: open_sans;
+    src: url(font/Open_Sans/static/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: reddit_mono;
+    src: url(font/Reddit_Mono/static/RedditMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: source_sans;
+    src: url(font/source-sans-pro/SourceSansPro-Regular.otf);
+}
+
+:root{
+    --cor_principal: #fb8ea3;
+    --cor_secundaria:#e49080;
+    --cor_sombra:#424242;
+    --cor_destaque: #cd334f;
+    --font_titulo: source_sans;
+    --font_conteudo: reddit_mono;
+    --font_destaque: courgette; 
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    width: 100vw;
+    height: 30vh;
+    background-image: linear-gradient(to bottom, var(--cor_secundaria), var(--cor_principal) );
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:  2.5vw ;
+    font-family: var(--font_titulo) , 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+nav{
+    width: 100vw;
+    height: 30vh;
+    background-color: var(--cor_principal);
+}
+
+nav > ul {
+    
+}
