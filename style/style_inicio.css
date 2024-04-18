@@ -142,18 +142,42 @@ div.presentes{
     flex-wrap: wrap;
 }
 
+@media only screen and (max-width: 1920px) {
+    
 .container div#card_flores{
-    margin: 10px 100px 0 12vw;
+    margin: 10px 1vw 0 10vw;
 }
 
 .container div#card_chocolate{
-    margin: 10px 100px 0 12vw;
+    margin: 10px 10vw 0 1vw;
 }
 
 .container div#card_carta{
-    margin: 10px 100px 0 12vw;
+    margin: 10px 1vw 0 10vw;
 }
 
 .container div#card_surpresa{
-    margin: 10px 100px 0 12vw; 
+    margin: 10px 10vw 0 1vw; 
 }
+
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .container div#card_flores{
+        margin: 10px 12vw 0 12vw;
+    }
+    
+    .container div#card_chocolate{
+        margin: 10px 12vw 0 12vw;
+    }
+    
+    .container div#card_carta{
+        margin: 10px 12vw 0 12vw;
+    }
+    
+    .container div#card_surpresa{
+        margin: 10px 12vw 0 12vw; 
+    }
+    
+    }
