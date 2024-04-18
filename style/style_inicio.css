@@ -33,10 +33,11 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 header{
-    max-width: 100%;
+    width: 100%;
     height: 30vh;
     background-image: linear-gradient(to bottom, var(--cor_secundaria), var(--cor_principal) );
     padding: 10px;
@@ -45,13 +46,13 @@ header{
     justify-content: center;
     font-size:  2.5vw ;
     font-family: var(--font_titulo) , 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    
 }
 
 nav{
-    max-width: 100%;
+    width: 100%;
     height: 10vh;
     background-color: var(--cor_principal);
-    box-sizing: border-box;
 }
 
 nav > ul{
@@ -92,9 +93,19 @@ section{
     color: white;
 }
 
-article{
-    
-    
+.img001{
+    background-image: url(images/Yellow-buttercups-flowers_1280x800.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+    margin-top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--cor_sombra) 5px solid;
 }
 
 div.boas_vindas{
@@ -117,5 +128,32 @@ div.presentes{
     background-color: var(--cor_destaque);
     border:1px solid var(--cor_principal) ;
     border-radius: 20px;
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    
 }
 
+.container{
+    display: inline-flex;
+    justify-content: space-around;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.container div#card_flores{
+    margin: 10px 100px 0 12vw;
+}
+
+.container div#card_chocolate{
+    margin: 10px 100px 0 12vw;
+}
+
+.container div#card_carta{
+    margin: 10px 100px 0 12vw;
+}
+
+.container div#card_surpresa{
+    margin: 10px 100px 0 12vw; 
+}
