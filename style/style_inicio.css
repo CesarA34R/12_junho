@@ -78,3 +78,18 @@ li  img{
     margin: 0 10px 0 10px; 
 }
 
+nav  a{
+    text-decoration: none;
+    color: #424242;
+}
+
+section{
+    max-height: 20vh;
+    min-height: 10vh;
+    width: 100vw;
+    background-color: #424242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
