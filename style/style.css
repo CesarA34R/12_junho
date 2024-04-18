@@ -50,10 +50,31 @@ header{
 
 nav{
     width: 100vw;
-    height: 30vh;
+    height: 10vh;
     background-color: var(--cor_principal);
-}
-
-nav > ul {
+    position: relative;
     
 }
+
+nav > ul{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+nav li{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+nav li:hover{
+    background-color: whitesmoke;
+    transition-duration: 1s;
+    border: 20px;
+}
+
+li  img{
+    margin: 0 10px 0 10px; 
+}
+
