@@ -136,9 +136,8 @@ div.presentes{
     border-radius: 20px;
     margin-top: 10px;
     display: flex;
-    align-items: flex-end;
-    justify-content: end;
-    
+    align-items: center;
+    justify-content: center;
 }
 
 .container{
@@ -194,17 +193,21 @@ footer{
         font-family: var(--font_titulo) , 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
         
     }
-
     details{
+        background-color: aliceblue;
+        width: max-content;
+        padding: 10px;
+        border-radius: 20px;
         display: flex;
         position: relative;
     }
+
 
     summary:hover{
         background-color: aliceblue;
         width: max-content;
         border-radius: 20px;
-        padding: 5px;
+        
     }
     
     ul{
@@ -229,8 +232,8 @@ footer{
         border-radius: 20px;
         margin-top: 10px;
         display: flex;
-        align-items: flex-end;
-        justify-content: end;
+        align-items: center;
+        justify-content: center;
     }
 
     .container div#card_flores,
@@ -276,13 +279,16 @@ footer{
     details{
         display: flex;
         position: relative;
+        background-color: aliceblue;
+        width: max-content;
+        padding: 10px;
+        border-radius: 20px;
     }
 
     summary:hover{
         background-color: aliceblue;
         width: max-content;
         border-radius: 20px;
-        padding: 5px;
     }
     
     ul{
@@ -307,8 +313,8 @@ footer{
         border-radius: 20px;
         margin-top: 10px;
         display: flex;
-        align-items: flex-end;
-        justify-content: end;
+        align-items: center;
+        justify-content: center;
     }
 
     .container div#card_flores,
