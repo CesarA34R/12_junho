@@ -19,7 +19,15 @@
     font-family: source_sans;
     src: url(font/source-sans-pro/SourceSansPro-Regular.otf);
 }
+/*
+summary::webkit-details-maker{
+    display: none;
+}
 
+summary:after{
+    content: ;
+}
+*/
 :root{
     --cor_principal: #fb8ea3;
     --cor_secundaria:#e49080;
@@ -34,6 +42,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1920px) {
+
+details{
+    display: none;
 }
 
 header{
@@ -123,8 +137,8 @@ div.boas_vindas{
 
 
 div.presentes{
-    width: 400px;
-    height: 200px;
+    min-width: 35vw;
+    min-height: 30vh;
     background-color: var(--cor_destaque);
     border:1px solid var(--cor_principal) ;
     border-radius: 20px;
@@ -142,8 +156,6 @@ div.presentes{
     flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 1920px) {
-    
 .container div#card_flores{
     margin: 10px 1vw 0 10vw;
 }
@@ -159,25 +171,39 @@ div.presentes{
 .container div#card_surpresa{
     margin: 10px 10vw 0 1vw; 
 }
-
 }
 
-@media only screen and (max-width: 600px) {
+/*
+
+ESTILO CSS PARA CELULAR
+
+*/
+
+@media only screen and (max-width: 375px) {
+    nav li{
+        display: none;
+    }
     
+    nav li:hover{
+        background-color: whitesmoke;
+        transition-duration: 1s;
+        border: 20px;
+    }
+
     .container div#card_flores{
-        margin: 10px 12vw 0 12vw;
+        margin: 10px 1vw 0 10vw;
     }
     
     .container div#card_chocolate{
-        margin: 10px 12vw 0 12vw;
+        margin: 10px 10vw 0 1vw;
     }
     
     .container div#card_carta{
-        margin: 10px 12vw 0 12vw;
+        margin: 10px 1vw 0 10vw;
     }
     
     .container div#card_surpresa{
-        margin: 10px 12vw 0 12vw; 
+        margin: 10px 10vw 0 1vw; 
     }
     
-    }
+}
