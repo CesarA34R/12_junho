@@ -129,7 +129,7 @@ div.boas_vindas{
 
 
 div.presentes{
-    min-width: 35vw;
+    min-width: 90vw;
     min-height: 30vh;
     background-color: var(--cor_destaque);
     border:1px solid var(--cor_principal) ;
