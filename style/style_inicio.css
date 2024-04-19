@@ -129,8 +129,8 @@ div.boas_vindas{
 
 
 div.presentes{
-    min-width: 90vw;
-    min-height: 30vh;
+    min-width: 400px;
+    min-height: 200px;
     background-color: var(--cor_destaque);
     border:1px solid var(--cor_principal) ;
     border-radius: 20px;
@@ -176,6 +176,13 @@ ESTILO CSS PARA CELULAR
         display: flex;
         position: relative;
     }
+
+    summary:hover{
+        background-color: aliceblue;
+        width: max-content;
+        border-radius: 20px;
+        padding: 5px;
+    }
     
     ul{
         background-color: aliceblue;
@@ -191,20 +198,23 @@ ESTILO CSS PARA CELULAR
         border: 20px;
     }
 
-    .container div#card_flores{
-        margin: 10px 1vw 0 10vw;
+    div.presentes{
+        min-width: 200px;
+        min-height: 100px;
+        background-color: var(--cor_destaque);
+        border:1px solid var(--cor_principal) ;
+        border-radius: 20px;
+        margin-top: 10px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: end;
     }
-    
-    .container div#card_chocolate{
-        margin: 10px 10vw 0 1vw;
-    }
-    
-    .container div#card_carta{
-        margin: 10px 1vw 0 10vw;
-    }
-    
+
+    .container div#card_flores,
+    .container div#card_chocolate,
+    .container div#card_carta,
     .container div#card_surpresa{
-        margin: 10px 10vw 0 1vw; 
+        margin: 10px auto;
     }
     
 }
