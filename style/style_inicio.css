@@ -172,7 +172,16 @@ ESTILO CSS PARA CELULAR
 */
 
 @media only screen and (max-width: 375px) {
-    nav li{
+    details{
+        display: flex;
+        position: relative;
+    }
+    
+    ul{
+        background-color: aliceblue;
+    }
+
+    ul#menu{
         display: none;
     }
     
