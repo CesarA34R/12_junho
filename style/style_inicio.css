@@ -163,11 +163,21 @@ div.presentes{
 .container div#card_surpresa{
     margin: 10px 10vw 0 1vw; 
 }
+
+footer{
+    text-align: center;
+    background-color: var(--cor_principal);
+    margin: 10px 0 0 0;
+    color: var(--cor_sombra);
+}
+
 }
 
 /*
 
-ESTILO CSS PARA CELULAR P
+******************************ESTILO CSS PARA CELULAR P************************************ ********************************************************************************************
+*******************************************************************************************
+
 
 */
 
@@ -229,12 +239,21 @@ ESTILO CSS PARA CELULAR P
     .container div#card_surpresa{
         margin: 10px auto;
     }
+
+    footer{
+        text-align: center;
+        background-color: var(--cor_principal);
+        margin: 10px 0 0 0;
+        color: var(--cor_sombra);
+    }
+    
     
 }
 
 /*
 
-css para telas de celulare M
+******************************ESTILO CSS PARA CELULAR M************************************ ********************************************************************************************
+*******************************************************************************************
 
 
 */
@@ -297,6 +316,13 @@ css para telas de celulare M
     .container div#card_carta,
     .container div#card_surpresa{
         margin: 10px auto;
+    }
+    
+    footer{
+        text-align: center;
+        background-color: var(--cor_principal);
+        margin: 10px 0 0 0;
+        color: var(--cor_sombra);
     }
     
 }  
