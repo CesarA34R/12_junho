@@ -19,15 +19,7 @@
     font-family: source_sans;
     src: url(font/source-sans-pro/SourceSansPro-Regular.otf);
 }
-/*
-summary::webkit-details-maker{
-    display: none;
-}
 
-summary:after{
-    content: ;
-}
-*/
 :root{
     --cor_principal: #fb8ea3;
     --cor_secundaria:#e49080;
