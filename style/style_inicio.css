@@ -171,7 +171,7 @@ ESTILO CSS PARA CELULAR
 
 */
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
     details{
         display: flex;
         position: relative;
