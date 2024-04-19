@@ -171,7 +171,20 @@ ESTILO CSS PARA CELULAR P
 
 */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 320px) {
+    header{
+        width: 100%;
+        height: 30vh;
+        background-image: linear-gradient(to bottom, var(--cor_secundaria), var(--cor_principal) );
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:  2.5vw ;
+        font-family: var(--font_titulo) , 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+        
+    }
+
     details{
         display: flex;
         position: relative;
@@ -199,8 +212,8 @@ ESTILO CSS PARA CELULAR P
     }
 
     div.presentes{
-        min-width: 200px;
-        min-height: 100px;
+        min-width: 50%;
+        min-height: 10%;
         background-color: var(--cor_destaque);
         border:1px solid var(--cor_principal) ;
         border-radius: 20px;
@@ -219,13 +232,15 @@ ESTILO CSS PARA CELULAR P
     
 }
 
+/*
+
+css para telas de celulare M
+
+
+*/
+
 
 @media only screen and (max-width: 425px) {
-
-    details{
-        display: none;
-    }
-    
     header{
         width: 100%;
         height: 30vh;
@@ -238,24 +253,25 @@ ESTILO CSS PARA CELULAR P
         font-family: var(--font_titulo) , 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
         
     }
-    
-    nav{
-        width: 100%;
-        height: 10vh;
-        background-color: var(--cor_principal);
-    }
-    
-    nav > ul{
+
+    details{
         display: flex;
-        justify-content: flex-start;
-        list-style: none;
-        text-align: center;
+        position: relative;
+    }
+
+    summary:hover{
+        background-color: aliceblue;
+        width: max-content;
+        border-radius: 20px;
+        padding: 5px;
     }
     
-    nav li{
-        margin: 8px;
-        padding: 8px;
-        border-radius: 20px;
+    ul{
+        background-color: aliceblue;
+    }
+
+    ul#menu{
+        display: none;
     }
     
     nav li:hover{
@@ -263,58 +279,9 @@ ESTILO CSS PARA CELULAR P
         transition-duration: 1s;
         border: 20px;
     }
-    
-    li  img{
-        margin: 0 10px 0 10px; 
-    }
-    
-    nav  a{
-        text-decoration: none;
-        color: #424242;
-    }
-    
-    section{
-        max-height: 20vh;
-        min-height: 10vh;
-        width: 100%;
-        background-color: #424242;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-    }
-    
-    .img001{
-        background-image: url(images/Yellow-buttercups-flowers_1280x800.jpg);
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position: left top;
-        background-size: cover;
-        height: 60vh;
-        width: 100%;
-        margin-top: 0%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: var(--cor_sombra) 5px solid;
-    }
-    
-    div.boas_vindas{
-        background-color: #424242;
-        max-width: 300px;
-        min-height: 200px;
-        padding: 20px;
-        margin:40px auto;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        border-radius: 20px;
-        color: white;
-    }
-    
-    
+
     div.presentes{
-        min-width: 400px;
+        min-width: 300px;
         min-height: 200px;
         background-color: var(--cor_destaque);
         border:1px solid var(--cor_principal) ;
@@ -323,16 +290,8 @@ ESTILO CSS PARA CELULAR P
         display: flex;
         align-items: flex-end;
         justify-content: end;
-        
     }
-    
-    .container{
-        display: inline-flex;
-        justify-content: space-around;
-        position: relative;
-        flex-wrap: wrap;
-    }
-    
+
     .container div#card_flores,
     .container div#card_chocolate,
     .container div#card_carta,
