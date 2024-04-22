@@ -8,11 +8,18 @@
 </head>
 <body>
         <div class="card">
-            <p>
+            <p id="msg">
                 Amor, você é como uma rosa: uma flor linda e apaixonante, adornada com delicados espinhos. Cada espinho, uma lembrança de algum momento em que alguém te feriu, mas isso só acrescenta à sua beleza única. Eu te amo exatamente como você é, com suas imperfeições que são poucas. Para mim, você é como a rosa mais deslumbrante do jardim, irradiando beleza na sua simplicidade.
                 <br>
-                <button>Você aceita uma rosa</button>
+                <button onclick="troca()">Você aceita uma rosa</button>
+                <br>
+                
             </p>
         </div>
+    <script>
+    function troca(){
+        document.getElementById("msg").innerHTML = "Obrigado por aceitar, te amo!!!";
+    }
+</script>
 </body>
 </html>
