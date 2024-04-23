@@ -87,13 +87,15 @@ section.imagem p {
 }
 
 section#img01{
-    background-image: url(../images/background01.jpg);
-    background-position: right center;
+    background-image: url(../style/images/Yellow-buttercups-flowers_1280x800.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
     background-attachment: fixed;
 }
 
 section#img02{
-    background-image: url(../images/background02.jpg);
+    background-image: url(../style/images/background02.jpg);
     background-position: right center;
     background-attachment: fixed;
 }
