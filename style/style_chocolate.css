@@ -43,7 +43,9 @@ body{
     background-image: url(https://c4.wallpaperflare.com/wallpaper/442/121/161/chocolate-4k-awesome-image-wallpaper-preview.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
+    width: 100vw;
+    height: 100vh;
+    background-position: right top;
 }
 
 .card{

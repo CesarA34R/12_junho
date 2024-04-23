@@ -33,7 +33,7 @@ html, body {
 }
 
 header {
-    background-color: var(--cor_sombra);
+    background-color: var(--cor_principal);
     color: white;
     text-align: center;
 }
@@ -102,7 +102,7 @@ section#img02{
 
 footer {
     padding: 10px 0 10px 0;
-    background-color: var(--cor_sombra);
+    background-color: var(--cor_principal);
     display: flex;
     justify-content: center;
 }
