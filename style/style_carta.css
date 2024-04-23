@@ -14,6 +14,10 @@
     --fonte_generica: Verdana, Geneva, Tahoma, sans-serif;
     --fonte_titulo: passion_one, cursive;
     --fonte_conteudo:lugrasimo, cursive;
+    --cor_principal: #fb8ea3;
+    --cor_secundaria:#e49080;
+    --cor_sombra:#424242;
+    --cor_destaque: #cd334f;
 }
 
 * {
@@ -23,13 +27,13 @@
 
 html, body {
     min-height: 100vh;
-    background-color: darkgray;
+    background-color: var(--cor_secundaria);
     font-family: var(--fonte_generica);
     
 }
 
 header {
-    background-color: black;
+    background-color: var(--cor_sombra);
     color: white;
     text-align: center;
 }
@@ -52,7 +56,7 @@ header a {
 }
 
 header a:hover {
-    text-decoration: underline skyblue;
+    text-decoration: underline var(--cor_destaque);
 }
 
 
@@ -72,7 +76,7 @@ section.normal{
 }
 
 section.imagem{
-    background-color: #1D1D1D;
+    background-color: var(--cor_sombra);
     color: white;
 }
 
@@ -96,7 +100,7 @@ section#img02{
 
 footer {
     padding: 10px 0 10px 0;
-    background-color: black;
+    background-color: var(--cor_sombra);
     display: flex;
     justify-content: center;
 }
@@ -112,5 +116,5 @@ footer a {
 }
 
 footer a:hover {
-    text-decoration: underline skyblue;
+    text-decoration: underline var(--cor_destaque);
 }
