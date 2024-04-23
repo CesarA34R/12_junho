@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: lugrasimo;
+    src: url(../fonts/Lugrasimo/Lugrasimo-Regular.ttf);
+}
+
+@font-face {
+    font-family: passion_one;
+    src: url(../fonts/Passion_One/PassionOne-Bold.ttf);
+}
+
+:root{
+    --fonte_generica: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte_titulo: passion_one, cursive;
+    --fonte_conteudo:lugrasimo, cursive;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte_generica);
+    
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header>h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte_titulo);
+    font-size: 5vw;
+}
+
+header>p {
+    padding-bottom: 50px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline skyblue;
+}
+
+
+section{
+    padding: 10vh 0 10vh 5vw;
+    font-family: var(--fonte_conteudo);
+    font-size: 2.5vw;
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: #1D1D1D;
+    color: white;
+}
+
+section.imagem p {
+    display: inline-block;
+    background-color: rgb(0, 0, 0, 0.214);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01{
+    background-image: url(../images/background01.jpg);
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+section#img02{
+    background-image: url(../images/background02.jpg);
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+footer {
+    padding: 10px 0 10px 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline skyblue;
+}
