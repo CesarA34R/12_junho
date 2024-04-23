@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: courgette;
+    src: url(font/Courgette/Courgette-Regular.ttf);
+}
+
+@font-face {
+    font-family: open_sans;
+    src: url(font/Open_Sans/static/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: reddit_mono;
+    src: url(font/Reddit_Mono/static/RedditMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: source_sans;
+    src: url(font/source-sans-pro/SourceSansPro-Regular.otf);
+}
+
+:root{
+    --cor_principal: #fb8ea3;
+    --cor_secundaria:#e49080;
+    --cor_sombra:#424242;
+    --cor_destaque: #cd334f;
+    --font_titulo: source_sans;
+    --font_conteudo: reddit_mono;
+    --font_destaque: courgette; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/442/121/161/chocolate-4k-awesome-image-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.card{
+    width: 400px;
+    height: 300px;
+    background-color: var(--cor_secundaria);
+    margin-top: 25vh;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 2px 2px #61616156 ;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.card button{
+    margin-top: 25px;
+    color: white;
+    background-color: var(--cor_destaque);
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+}
