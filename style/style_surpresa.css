@@ -35,12 +35,16 @@
     padding: 0;
 }
 
+header{
+    text-align: center;
+    background-image: ;
+}
+
 body{
     background-color: var(--cor_principal);
-    display: flex;
-    text-align: center;
+    
 }
 article{
     margin: auto;
-    
+    background-color: aliceblue;
 }
