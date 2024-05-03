@@ -1,3 +1,20 @@
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    
+    if (isset($_POST['opcao1']) && $_POST['opcao1'] == 'b_break' &&
+        isset($_POST['opcao2']) && $_POST['opcao2'] == 'meu_universo' &&
+        isset($_POST['opcao3']) && $_POST['opcao3'] == 'lanche_break') {
+        
+        header("Location: ../view/sucesso.html");
+        exit;
+    } else {
+        header("Location: ../view/tente_novamente.html");
+        exit;
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +35,9 @@
     <article>
         <form action="../php/main.php" method="get">
             <div>
-                <p>1. Em qual local eu contei que estava apaixonado por você ?</p>
+                <p>
+                    <mark>1. Em qual local eu contei que estava apaixonado por você ?</mark>
+                </p>
                 <input type="radio" name="opcao1" id="break" value="b_break">
                 <label for="banco_frente_break">banco na frente do break</label>
             </div>
@@ -32,7 +51,7 @@
             </div>
             <br>
             <div>
-                <p>2. Qual é a nossa música ?</p>
+                <p><mark>2. Qual é a nossa música ?</mark></p>
                 <input type="radio" name="opcao2" id="more_than_words" value="b_more_than_words">
                 <label for="more_than_words">More_than_words</label>
             </div>
@@ -45,7 +64,7 @@
                 <label for="meu_universo">Meu Universo</label>
             </div>
             <div>
-                <p>3. Qual o tipo de comida que nós mais gostamos ?</p>
+                <p><mark>3. Qual o tipo de comida que nós mais gostamos ?</mark></p>
                 <input type="radio" name="opcao3" id="Macarrao" value="Macarrao">
                 <label for="Macarrao">Macarrão</label>
             </div>
@@ -57,9 +76,8 @@
                 <input type="radio" name="opcao3" id="b_lanche_break" value="lanche_break">
                 <label for="lanche_break">Lanche do break</label>
             </div>
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar" id="enviar">
         </form>
     </article>
 </body>
-
 </html>

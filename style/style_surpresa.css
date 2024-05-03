@@ -28,6 +28,7 @@
     --font_titulo: source_sans;
     --font_conteudo: reddit_mono;
     --font_destaque: courgette; 
+    
 }
 
 *{
@@ -58,4 +59,35 @@ article{
 
 article div{
     line-height: 2em;
+}
+
+div > p{
+    color: var(--cor_principal);
+}
+
+mark{
+    background-color: var(--cor_secundaria);
+    padding:5px;
+    border-radius: 15px;
+}
+
+#enviar{
+    border: none;
+    font-size: small;
+    background-color: var(--cor_principal);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+#enviar:hover{
+    transition: 2s;
+    background-color: var(--cor_destaque);
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+input{
+    padding: 2px;
 }
