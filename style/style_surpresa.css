@@ -37,7 +37,11 @@
 
 header{
     text-align: center;
-    background-image: ;
+    padding: 10px;
+}
+
+h1,h2{
+    font-family: var(--font_titulo), 'Courier New', Courier, monospace;
 }
 
 body{
@@ -47,4 +51,11 @@ body{
 article{
     margin: auto;
     background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    width: 500px;
+}
+
+article div{
+    line-height: 2em;
 }
