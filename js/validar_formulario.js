@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 return radios[i].value;
             }
         }
-        return null; // se nenhum estiver selecionado
+        return null; 
     }
 });
 

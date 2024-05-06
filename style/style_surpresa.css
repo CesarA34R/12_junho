@@ -92,3 +92,9 @@ input{
     padding: 2px;
 }
 
+button{
+    padding: 7px;
+    border: none;
+    background-color: var(--cor_destaque);
+    border-radius: 15px;
+}
