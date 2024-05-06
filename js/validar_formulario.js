@@ -34,4 +34,4 @@ document.addEventListener("DOMContentLoaded", function() {
         return null; // se nenhum estiver selecionado
     }
 });
->>>>>>> Stashed changes
+
