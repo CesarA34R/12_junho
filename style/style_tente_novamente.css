@@ -28,7 +28,6 @@
     --font_titulo: source_sans;
     --font_conteudo: reddit_mono;
     --font_destaque: courgette; 
-    
 }
 
 *{
@@ -36,60 +35,21 @@
     padding: 0;
 }
 
-header{
+.container{
+    max-width: 600px;
+    height: 400px;
+    background-color: var(--cor_principal);
+    margin: 25vh auto;
+    border: 1px solid var(--cor_destaque);
+    font-family: var(--font_destaque);
     text-align: center;
-    padding: 10px;
-}
-
-h1,h2{
-    font-family: var(--font_titulo), 'Courier New', Courier, monospace;
-}
-
-body{
-    background-color: var(--cor_principal);
-    
-}
-article{
-    margin: auto;
-    background-color: aliceblue;
-    padding: 10px;
-    border-radius: 10px;
-    width: 500px;
-}
-
-article div{
-    line-height: 2em;
-}
-
-div > p{
-    color: var(--cor_principal);
-}
-
-mark{
-    background-color: var(--cor_secundaria);
-    padding:5px;
     border-radius: 15px;
+    box-sizing: border-box;
 }
 
-#enviar{
-    border: none;
-    font-size: small;
-    background-color: var(--cor_principal);
-    padding: 10px;
-    border-radius: 15px;
-}
-
-
-#enviar:hover{
-    transition: 2s;
-    background-color: var(--cor_destaque);
-    border: none;
-    padding: 10px;
-    border-radius: 15px;
-}
-
-input{
-    padding: 2px;
+h1{
+    align-self: center;
+    margin: 20%;
 }
 
 button{
@@ -98,3 +58,4 @@ button{
     background-color: var(--cor_destaque);
     border-radius: 15px;
 }
+
