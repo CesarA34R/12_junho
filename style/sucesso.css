@@ -1,17 +1,73 @@
+@font-face {
+    font-family: courgette;
+    src: url(font/Courgette/Courgette-Regular.ttf);
+}
+
+@font-face {
+    font-family: open_sans;
+    src: url(font/Open_Sans/static/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: reddit_mono;
+    src: url(font/Reddit_Mono/static/RedditMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: source_sans;
+    src: url(font/source-sans-pro/SourceSansPro-Regular.otf);
+}
+
+:root{
+    --cor_principal: #fb8ea3;
+    --cor_secundaria:#e49080;
+    --cor_sombra:#424242;
+    --cor_destaque: #cd334f;
+    --cor_destaque2:#FEDE03;
+    --font_titulo: source_sans;
+    --font_conteudo: reddit_mono;
+    --font_destaque: courgette;
+}
+
+
 *{
     margin: 0;
     padding: 0;
 }
 
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+}
+
 .card{
+    position: relative;
+    z-index: 1;
+    display: flex;
     width: 400px;
     height: 300px;
-    background-color: var(--cor_principal);
-    margin-top: 25vh;
+    background-color: var(--cor_destaque2);
     padding: 15px;
     display: flex;
     align-items: center;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 1px 2px 2px 2px #61616156 ;
+    box-shadow: 1px 2px 2px 2px #61616156;
 }
