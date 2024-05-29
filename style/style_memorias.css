@@ -21,6 +21,7 @@
 }
 
 :root{
+    --cor_neutra: #ffffff;
     --cor_principal: #fb8ea3;
     --cor_secundaria:#e49080;
     --cor_sombra:#424242;
@@ -144,6 +145,11 @@ div.boas_vindas{
     margin: 10px 10px 0 10px;
 }
 
+p{
+    font-family: var(--font_destaque);
+    color: var(--cor_neutra);
+}
+
 .container div p{
     text-align: center;
     width: 200px;
@@ -253,7 +259,7 @@ div.img_19{
 }
 div.img_20{
     background-image: url(images/1\ \(20\).jpeg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 div.img_21{
